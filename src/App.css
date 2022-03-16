@@ -1,0 +1,89 @@
+#logo {
+  height: 273px;
+  width: 592px;  
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background: white; /* Just to visualize the extent */
+}
+
+.welcome {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;  
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.no-bullets {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margins */
+  overflow-wrap: break-word;
+}
+
+.front {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 90%;
+  color: black;
+}
+
+.main-panel {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.wide {
+  width: 90%;
+  padding: 1%;
+}
+
+.bordered {
+  border-width:1px;
+  border-style:solid;
+  border-color:grey;
+  padding: 1%;
+  background: #F0F0F0;
+  height: 100%;
+  width: 100%;
+}
+
+.chat {
+  width: 49%;
+  height: 100%;
+}
+
+.matches {
+  width: 29%;
+}
+
+.presence {
+  width: 19%;
+}
+

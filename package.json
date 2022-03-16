@@ -1,0 +1,73 @@
+{
+  "name": "lumbernet-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@achingbrain/libp2p-gossipsub": "^0.12.2",
+    "@chainsafe/libp2p-noise": "^5.0.2",
+    "@nfteyez/sol-rayz": "^0.8.0",
+    "@project-serum/anchor": "^0.17.1-beta.1",
+    "@solana/spl-token": "^0.1.8",
+    "@solana/wallet-adapter-base": "^0.6.0",
+    "@solana/wallet-adapter-react": "^0.12.2",
+    "@solana/wallet-adapter-react-ui": "^0.4.2",
+    "@solana/wallet-adapter-wallets": "^0.10.0",
+    "@solana/web3.js": "^1.29.1",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "^5.1.8",
+    "borsh": "^0.7.0",
+    "cross-fetch": "^3.1.5",
+    "libp2p": "^0.36.2",
+    "libp2p-bootstrap": "^0.14.0",
+    "libp2p-kad-dht": "^0.28.6",
+    "libp2p-mplex": "^0.10.4",
+    "libp2p-webrtc-star": "^0.25.0",
+    "libp2p-websocket-star": "^0.10.2",
+    "libp2p-websockets": "^0.16.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-responsive-carousel": "^3.2.22",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.3",
+    "react-unity-webgl": "^8.7.2",
+    "round-table": "../round-table/",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "HTTPS=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not ie <= 99",
+      "not android <= 4.4.4",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "homepage": "./",
+  "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.16.7"
+  }
+}
