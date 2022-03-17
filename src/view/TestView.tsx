@@ -16,6 +16,7 @@ import logoFile from "../img/RoundTable.jpg";
 
 
 var roundTableInitialising = false;
+var roundTableInitialised = false;
 var roundTable: RoundTable | null = null;
 
 function format_time(s : number) {
@@ -35,6 +36,7 @@ export const TestView = () =>
             const id = Keypair.fromSeed(sig.slice(0,32));
             initRoundTable(connection, pubkey, new Keypair(), new PublicKey("69GoySbK6vc9QyWsCYTMUjpQXCocbDJansszPTEaEtMp"), "round-table").then( (round) => {
                 roundTable = round;
+                roundTableInitialised = true;
             })
         });
         
@@ -107,7 +109,7 @@ export const TestView = () =>
         })
     }
 
-    if (wallet.connected) {
+    if (roundTableInitialised) {
     return (
         <div className="full-screen">
             <div className="main">
@@ -171,9 +173,13 @@ export const TestView = () =>
                         <img id="logo" src={logoFile} alt="logo"/>
                     </div>
                     <div className="centered">
-                        <MyWallet/>
+                        {roundTableInitialising &&
+                            <h1>Loading Network details</h1>
+                        }
+                        {!roundTableInitialising &&
+                            <MyWallet/>
+                        }
                     </div>
-                    
                 </div>
             </div>
         )
